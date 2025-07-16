@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Stopwatch App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>Stopwatch</h1>
+
+  <div id="stopwatch" role="region" aria-label="Stopwatch Timer">
+    <div id="time" aria-live="polite" aria-atomic="true">00:00:00.000</div>
+
+    <div class="buttons">
+      <button id="startPauseBtn" aria-pressed="false">Start</button>
+      <button id="lapBtn" disabled>Lap</button>
+      <button id="resetBtn" disabled>Reset</button>
+    </div>
+
+    <div id="lapTimes" aria-live="polite" aria-atomic="true" aria-label="Lap times">
+      <h2>Laps</h2>
+      <ul id="lapList"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
